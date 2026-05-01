@@ -1,6 +1,6 @@
 [build]
 builder = "DOCKERFILE"
-<<<<<<< HEAD
+dockerfilePath = "Dockerfile"
 
 [deploy]
 numReplicas = 1
@@ -8,12 +8,3 @@ restartPolicyType = "ON_FAILURE"
 restartPolicyMaxRetries = 10
 healthcheckPath = "/"
 healthcheckTimeout = 300
-=======
-dockerfilePath = "Dockerfile"
-
-[deploy]
-healthcheckPath = "/"
-healthcheckTimeout = 300
-restartPolicyType = "ON_FAILURE"
-restartPolicyMaxRetries = 10
->>>>>>> 840afd16e3360927beb9152bed6183ef0e749875
