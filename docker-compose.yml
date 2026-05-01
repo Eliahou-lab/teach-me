@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+version: '3.8'
+
+>>>>>>> 840afd16e3360927beb9152bed6183ef0e749875
 services:
   open-webui:
     image: ghcr.io/open-webui/open-webui:main
@@ -5,11 +10,20 @@ services:
     ports:
       - "3000:8080"
     environment:
+<<<<<<< HEAD
       OPENAI_API_BASE_URL: https://api.mistral.ai/v1
       OPENAI_API_KEY: ${OPENAI_API_KEY}
+=======
+      - OPENAI_API_BASE_URL=https://api.mistral.ai/v1
+      - OPENAI_API_KEY=${MISTRAL_API_KEY}
+>>>>>>> 840afd16e3360927beb9152bed6183ef0e749875
     volumes:
       - open-webui-data:/app/backend/data
     restart: unless-stopped
 
 volumes:
   open-webui-data:
+<<<<<<< HEAD
+=======
+    driver: local
+>>>>>>> 840afd16e3360927beb9152bed6183ef0e749875
